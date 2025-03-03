@@ -50,6 +50,9 @@ app.use("/product",productRoute)
 app.use("/api/payment/",paymentRoute);
 
 
+app.get("/", (req, res) => {
+    res.send("Server is running");
+});
 
 
 mongoose.connect(process.env.DBCON).then(()=>{
