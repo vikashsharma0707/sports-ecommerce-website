@@ -1,0 +1,178 @@
+.footer {
+  background-color: #2f2f2f; /* Dark gray background to match the image */
+  color: #fff;
+  padding: 30px 20px; /* Adjusted padding for better fit */
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between sections */
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 180px; /* Minimum width to ensure content fits */
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Matches the image style */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff4500;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff4500;
+}
+
+.subscribe-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  display: block; /* Ensure it behaves as a block */
+  margin-top: 10px;
+  width: 100%;
+  max-width: 180px; /* Adjusted to fit the image design */
+}
+
+.subscribe-button:hover {
+  background-color: #e03a00;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.accredited-logo img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.footer-links {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer-links a:hover {
+  color: #ff4500;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  color: #999;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px; /* Increased gap for better separation */
+  }
+
+  .footer-section {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .subscribe-button {
+    margin: 10px auto; /* Center the button */
+  }
+
+  .footer-bottom {
+    padding-top: 15px;
+  }
+
+  .accredited-logo,
+  .footer-links,
+  .copyright {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-section ul li a {
+    font-size: 0.8rem;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+  }
+
+  .subscribe-button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+
+  .footer-links a {
+    font-size: 0.7rem;
+  }
+
+  .copyright {
+    font-size: 0.6rem;
+  }
+}

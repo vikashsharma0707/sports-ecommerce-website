@@ -1,0 +1,71 @@
+/* Custom styles for Offcanvas */
+.offcanvas {
+    background-color: #f8f9fa; /* Light background color for the offcanvas */
+    border-radius: 10px 0 0 10px; /* Rounded corners for the offcanvas */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow for better separation */
+  }
+  
+  .offcanvas-header {
+    background-color: #007bff; /* Blue background for header */
+    color: white; /* White text for the title */
+    border-bottom: 2px solid #0056b3; /* Darker blue bottom border */
+    font-weight: bold;
+  }
+  
+  .offcanvas-header .btn-close {
+    color: white; /* White color for close button */
+    font-size: 1.5rem;
+  }
+  
+  .offcanvas-body {
+    padding: 20px; /* Padding for the body */
+    color: #333; /* Dark text color for body */
+    font-size: 1rem;
+    height: 80vh; /* Set the height of the body to fit inside */
+    overflow-y: auto; /* Allow scrolling if the content overflows */
+  }
+  
+  .offcanvas-body h5 {
+    color: #007bff; /* Blue color for section headers */
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .offcanvas-body .wishlist-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .offcanvas-body .wishlist-item:last-child {
+    border-bottom: none;
+  }
+  
+  .offcanvas-body .wishlist-item img {
+    width: 50px; /* Set width for images */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .offcanvas-body .wishlist-item p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .offcanvas-body .wishlist-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .offcanvas-body .wishlist-item button:hover {
+    background-color: #c82333;
+  }
+  

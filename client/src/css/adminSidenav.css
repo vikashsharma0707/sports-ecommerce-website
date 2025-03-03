@@ -1,0 +1,149 @@
+/* General layout for the dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  /* Side Navigation Styling */
+  .sidenav {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Sidenav title */
+  .sidenav1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Sidenav links */
+  .sidenav2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+  }
+  
+  .sidenav2 a {
+    padding: 12px 0;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidenav2 a:hover {
+    background-color: #34495e;
+  }
+  
+  .sidenav2 a.active {
+    background-color: #2980b9;
+  }
+  
+  /* Sidenav logout */
+  .sidenav3 {
+    margin-top: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .sidenav3 a {
+    color: #ecf0f1;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .sidenav3 a:hover {
+    background-color: #c0392b;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main Content Styling */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    overflow-y: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidenav {
+      width: 100%;
+      height: auto;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+  
+  /* For 475px and smaller screens */
+  @media (max-width: 475px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    /* Sidenav becomes full-width and stack vertically */
+    .sidenav {
+      width: 100%;
+      position: static;
+      height: auto;
+      box-shadow: none;
+      margin-bottom: 10px; /* Add space between the sidenav and main content */
+    }
+  
+    .sidenav1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .sidenav2 a {
+      font-size: 16px;
+      padding: 10px 0;
+    }
+  
+    .main-content {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    /* Stack sidenav links vertically */
+    .sidenav2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
