@@ -30,7 +30,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const loaddata = () => {
-    let api = "http://localhost:8000/product/productdisplay";
+    let api = ":8000/product/productdisplay";
     axios.get(api).then((res) => {
       setmydata(res.data);
     });

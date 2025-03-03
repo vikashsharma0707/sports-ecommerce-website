@@ -10,7 +10,7 @@ const Stock = ({ productId }) => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/adminuser/adminstock/${productId}`);
+        const response = await axios.get(`https://sports-ecommerce-website.onrender.com/adminuser/adminstock/${productId}`);
         setProduct(response.data);
       } catch (error) {
         setError('Error fetching product data.');
@@ -30,7 +30,7 @@ const Stock = ({ productId }) => {
     }
 
     try {
-      const response = await axios.put(`http://localhost:8000/adminuser/adminstock/${productId}/sell`, {
+      const response = await axios.put(`https://sports-ecommerce-website.onrender.com/adminuser/adminstock/${productId}/sell`, {
         quantity: quantityToSell,
       });
       setProduct(response.data.product); // Update product data with remaining quantity

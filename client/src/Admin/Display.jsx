@@ -12,7 +12,7 @@ const Logout = () => {
 
   const loadData = () => {
     setLoading(true)
-    let api = `http://localhost:8000/adminuser/sorted?sortField=${sortField}&sortOrder=${sortOrder}`;
+    let api = `https://sports-ecommerce-website.onrender.com/adminuser/sorted?sortField=${sortField}&sortOrder=${sortOrder}`;
     axios
       .get(api)
       .then((res) => {

@@ -310,7 +310,7 @@ const TennisGroup = () => {
   const navigate = useNavigate();
 
   const loaddata = () => {
-    let api = "http://localhost:8000/product/productsportscategory?sportscategory=tennis";
+    let api = "https://sports-ecommerce-website.onrender.com/product/productsportscategory?sportscategory=tennis";
     axios.get(api).then((res) => {
       setmydata(res.data);
       console.log(res.data);

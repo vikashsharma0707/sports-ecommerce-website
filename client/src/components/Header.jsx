@@ -40,7 +40,7 @@ const Header = () => {
   const cardLength1 = CardData1.length;
 
   const handleSubmit = () => {
-    const api = "http://localhost:8000/adminuser/usercheck";
+    const api = "https://sports-ecommerce-website.onrender.com/adminuser/usercheck";
     axios
       .post(api, { user: username, password })
       .then((res) => {
@@ -54,7 +54,7 @@ const Header = () => {
   };
 
   const handleSearch = () => {
-    let api = `http://localhost:8000/product/productsearch/?product=${myPro}`;
+    let api = `https://sports-ecommerce-website.onrender.com/product/productsearch/?product=${myPro}`;
     axios.get(api).then((res) => {
       setMyData(res.data);
       console.log(res.data);

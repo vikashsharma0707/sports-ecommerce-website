@@ -10,7 +10,7 @@ const OrderDisplay=()=>{
     const [data,setdata] =useState([])
 
     const loaddata=()=>{
-        let api = "http://localhost:8000/userorder/orderDisplay";
+        let api = "https://sports-ecommerce-website.onrender.com/userorder/orderDisplay";
         axios.get(api).then((res)=>{
              setdata(res.data)
         })

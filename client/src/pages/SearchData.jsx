@@ -18,7 +18,7 @@ const SearchData=()=>{
 
     const handlechange=(e)=>{
       setmypro(e.target.value);
-      let api =`http://localhost:8000/product/productsearch/?product=${mypro}`;
+      let api =`https://sports-ecommerce-website.onrender.com/product/productsearch/?product=${mypro}`;
       axios.get(api).then((res)=>{
          setmydata(res.data)
          console.log(res.data)

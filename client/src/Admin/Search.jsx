@@ -30,7 +30,7 @@ const Search = () => {
 
   const handleChange = (e) => {
     setinput(e.target.value);
-    let api = `http://localhost:8000/adminuser/adminDataSearch/?adminuser=${input}`;
+    let api = `https://sports-ecommerce-website.onrender.com/adminuser/adminDataSearch/?adminuser=${input}`;
     axios.post(api).then((res) => {
       setmydata(res.data);
       console.log(res.data);

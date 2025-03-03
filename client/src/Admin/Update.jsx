@@ -15,7 +15,7 @@ const Update = () => {
 
     // Load data from the API when the component mounts
     const loadData = () => {
-        let api = "http://localhost:8000/adminuser/adminUpdateDisplay";
+        let api = "https://sports-ecommerce-website.onrender.com/adminuser/adminUpdateDisplay";
         axios.get(api).then((res) => {
             setMyData(res.data);
         }).catch(err => console.error("Error fetching data:", err));
@@ -27,7 +27,7 @@ const Update = () => {
 
     // Handle deletion of a record
     const recDel = (id) => {
-        let api = "http://localhost:8000/adminuser/adminDataDelete";
+        let api = "https://sports-ecommerce-website.onrender.com/adminuser/adminDataDelete";
         axios.post(api, { id: id }).then((res) => {
             alert("Data deleted successfully");
             loadData();  // Refresh data after deletion
@@ -36,7 +36,7 @@ const Update = () => {
 
     // Handle fetching data for editing
     const recEdt = (id) => {
-        let api2 = "http://localhost:8000/adminuser/adminEdit";
+        let api2 = "https://sports-ecommerce-website.onrender.com/adminuser/adminEdit";
         axios.post(api2, { id: id }).then((res) => {
             setInput(res.data);
             setShow(true);
@@ -68,7 +68,7 @@ const Update = () => {
         console.log('Image uploaded:', response.data.url);
 
 
-        let api4 = "http://localhost:8000/adminuser/adminEditSave";
+        let api4 = "https://sports-ecommerce-website.onrender.com/adminuser/adminEditSave";
         axios.post(api4 ,{...input, image:response.data.url}).then((res) => {
             alert("Data saved successfully");
             loadData();  // Refresh data after update

@@ -242,7 +242,7 @@ const Checkout = () => {
             order_id: data.id,
             handler: async (response) => {
                 try {
-                    const verifyURL = "https://localhost:8000/api/payment/verify";
+                    const verifyURL = "https://sports-ecommerce-website.onrender.com/api/payment/verify";
                     const { data } = await axios.post(verifyURL, response);
                 } catch (error) {
                     console.log(error);
@@ -265,7 +265,7 @@ const Checkout = () => {
         })
 
         try {
-            const orderURL = "http://localhost:8000/api/payment/orders";
+            const orderURL = "https://sports-ecommerce-website.onrender.com/api/payment/orders";
             const { data } = await axios.post(orderURL, { amount: mypro.price });
             console.log(data);
             initPay(data.data);

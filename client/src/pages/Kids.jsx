@@ -15,7 +15,7 @@ const Kids=()=>{
     const navigate = useNavigate()
 
     const loaddata=()=>{
-        let api="http://localhost:8000/product/productcategory?category=kids";
+        let api="https://sports-ecommerce-website.onrender.com/product/productcategory?category=kids";
         axios.get(api).then((res)=>{
           setmydata(res.data)
           console.log(res.data)

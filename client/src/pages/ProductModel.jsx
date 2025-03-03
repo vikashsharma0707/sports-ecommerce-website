@@ -29,7 +29,7 @@ const Home = () => {
   // Fetch all products
   const loaddata = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/product/productdisplay");
+      const res = await axios.get("https://sports-ecommerce-website.onrender.com/product/productdisplay");
       setmydata(res.data);
     } catch (error) {
       console.error("Error fetching products:", error);

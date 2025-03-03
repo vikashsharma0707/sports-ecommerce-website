@@ -32,7 +32,7 @@ const ShopProduct=()=>{
 
 
        const handleSubmit=()=>{
-        let api="http://localhost:8000/product/shopproduct";
+        let api="https://sports-ecommerce-website.onrender.com/product/shopproduct";
         axios.post(api,input).then((res)=>{
           setmydata(res.data)
           console.log(res.data)

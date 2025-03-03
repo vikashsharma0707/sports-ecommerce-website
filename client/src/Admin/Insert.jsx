@@ -36,7 +36,7 @@ const Insert = () => {
             const response = await axios.post('https://api.cloudinary.com/v1_1/dilbe0lbx/image/upload', formData);
             console.log('Image uploaded:', response.data);
 
-            const api1 = "http://localhost:8000/product/productsave";
+            const api1 = "https://sports-ecommerce-website.onrender.com/product/productsave";
             await axios.post(api1, { ...input, image: response.data.url });
             alert("Data saved successfully!");
         } catch (error) {

@@ -24,7 +24,7 @@ const App = () => {
   // Fetch counts data from API
   const fetchCounts = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/adminuser/usercount");
+      const response = await axios.get("https://sports-ecommerce-website.onrender.com/adminuser/usercount");
       setCounts(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -56,7 +56,7 @@ const App = () => {
       alert('Please enter a search term.');
       return;
     }
-    const api = `http://localhost:8000/adminuser/datasearch/?adminuser=${mypro}`;
+    const api = `https://sports-ecommerce-website.onrender.com/adminuser/datasearch/?adminuser=${mypro}`;
     axios.get(api)
       .then((res) => {
         setmydata(res.data);  

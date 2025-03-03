@@ -15,7 +15,7 @@ const Fitness=()=>{
     const navigate = useNavigate()
 
     const loaddata=()=>{
-        let api="http://localhost:8000/product/productsportscategory?sportscategory=fitness";
+        let api="https://sports-ecommerce-website.onrender.com/product/productsportscategory?sportscategory=fitness";
         axios.get(api).then((res)=>{
           setmydata(res.data)
           console.log(res.data)

@@ -14,7 +14,7 @@ const ProductDetail=()=>{
     const [mydata,setmydata] =useState({});
 
     const loaddata=()=>{
-        let api="http://localhost:8000/product/productdetail";
+        let api="https://sports-ecommerce-website.onrender.com/product/productdetail";
         axios.post(api,{id:proid}).then((res)=>{
            setmydata(res.data)
         })
