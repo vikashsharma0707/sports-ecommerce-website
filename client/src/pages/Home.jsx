@@ -30,7 +30,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const loaddata = () => {
-    let api = ":8000/product/productdisplay";
+    let api = "https://sports-ecommerce-website.onrender.com/product/productdisplay";
     axios.get(api).then((res) => {
       setmydata(res.data);
     });
