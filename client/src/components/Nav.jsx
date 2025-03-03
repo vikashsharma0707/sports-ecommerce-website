@@ -1707,7 +1707,7 @@ const Nav = () => {
         </Modal.Header>
         <Modal.Body className="modal-body">
           <div className="form-group">
-            <label htmlFor="username">Enter Admin Name:</label>
+            <label htmlFor="username">Enter Admin Name: admin</label>
             <input
               type="text"
               id="username"
@@ -1718,7 +1718,7 @@ const Nav = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Enter Password:</label>
+            <label htmlFor="password">Enter Password: admin12345</label>
             <input
               type="password"
               id="password"
