@@ -50,7 +50,7 @@ const Checkout = () => {
       handler: async (response) => {
         try {
           if (response.razorpay_payment_id) {
-            const verifyURL = "https://sports-ecommerce-website.onrender.com/api/payment/verify";
+            const verifyURL = "http://localhost:8000/api/payment/verify";
             await axios.post(verifyURL, response);
 
             // Clear cart and reset form
@@ -97,11 +97,11 @@ const Checkout = () => {
     });
 
     try {
-      const orderURL = "https://sports-ecommerce-website.onrender.com/api/payment/orders";
+      const orderURL = "http://localhost:8000/api/payment/orders";
       const { data } = await axios.post(orderURL, { amount: totalAmount });
 
       // Save order details in backend
-      const userSaveURL = "https://sports-ecommerce-website.onrender.com/userorder/usersave";
+      const userSaveURL = "http://localhost:8000/userorder/usersave";
       await axios.post(userSaveURL, {
         ...input,
         proname: productNames,
